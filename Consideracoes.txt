@@ -1,0 +1,41 @@
+Comandos Iniciais no Typescript
+
+* Instalação do Typescript
+npm install -g typescript
+
+* Confirma se foi instalado
+tsc --version
+
+
+* Instalação do tsconfig.json
+tsc --init
+
+* Para compilar o typescript de forma prática, siga os seguintes passos:
+    1º Ctrl + Shift + B
+        1.1º    Escolha o 'build' para transpilar o typescript e executar as intruções
+        1.2º    Escolha o 'watch' para transpilar o código e acompanhar as mudanças
+                do código, como na identificação de erros.
+
+* Para executar o programa em typescript
+node .\nome_arquivo (no cmd você deve estar dentro da pasta que contém o arquivo)
+
+
+Boolean x Boolean
+
+Boolean -> indica um boolean para objeto
+boolean -> tipo primitivo indicado para variáveis
+
+Number x number
+
+Number -> indica um number para objeto
+number -> tipo primitivo indicado para variáveis
+
+number != bigint
+
+number -> tipo para conjunto de números (inteiro, decimal, hexadecimal, octal, binário etc)
+bigint -> tipo primitivo que permite a manipulação de números grandes sem erros e arredondamentos
+            -> no final de cada número deve haver o caractere 'n'
+            -> * esse tipo é disponível somente a partir do ES2020 ou ESNEXT (altera-se isso no tsconfig.json)
+
+TUPLAS -> permitem o armazenamento em conjunto de diferentes tipos de dados
+        -> são arrays de elementos fixos, de forma que sejam colocados em uma ordem pré-definida na tipagem
