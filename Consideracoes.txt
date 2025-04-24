@@ -6,7 +6,6 @@ npm install -g typescript
 * Confirma se foi instalado
 tsc --version
 
-
 * Instalação do tsconfig.json
 tsc --init
 
