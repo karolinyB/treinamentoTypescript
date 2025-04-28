@@ -38,3 +38,38 @@ bigint -> tipo primitivo que permite a manipulação de números grandes sem err
 
 TUPLAS -> permitem o armazenamento em conjunto de diferentes tipos de dados
         -> são arrays de elementos fixos, de forma que sejam colocados em uma ordem pré-definida na tipagem
+
+ENUM -> * Não é tão recomendado
+        Armazena valores que representam opções fixas
+        O nome de um enum é colocado em letra maiúscula
+        Permite a proteção contra erros ou valores inválidos, uma vez que esses valores já foram pré-definidos
+        Normalmente, são utilizados em contextos onde há valores fixos a serem manipulados
+            * Exemplo:
+                        enum Estacao {
+                                        VERAO,    // 0
+                                        OUTONO,   // 1
+                                        INVERNO,  // 2
+                                        PRIMAVERA // 3
+                                     }
+
+                        enum Estacao {
+                                        VERAO       = "Verão",
+                                        OUTONO      = "Outono",
+                                        INVERNO     = "Inverno",
+                                        PRIMAVERA   = "Primavera"
+                                      }
+UNKNOWN -> Utilizado em contextos em que não se sabe o tipo a ser definido a um elemento
+           Verifica o tipo dos elementos antes de qualquer operação
+           TODOS OS TIPOS PODEM SER ATRIBUIDOS A UNKNOWN
+
+VOID -> É possível utilizar esse tipo em variáveis.
+        Os valores seriam -> undefined | null (para ativar essa opção, é necessário definir como 'false' a opção 
+        'strictNullChecks' no tsconfig.json)
+
+NULL -> ausência de valor intencional
+        pode ser atribuído a uma variável
+        é considerado como um objeto
+        valor de null será um valor primitivo
+
+UNDEFINED -> variáveis não inicializadas são do tipo 'undefined'
+             é considerado um tipo
