@@ -73,3 +73,30 @@ NULL -> ausência de valor intencional
 
 UNDEFINED -> variáveis não inicializadas são do tipo 'undefined'
              é considerado um tipo
+
+== x ===
+        ==  -> compara os valores e converte o seu tipo caso necessário
+        === -> compara os valores e os tipos
+
+NEVER -> representa valores que nunca ocorrem
+         quando apontado indica que não é possível atribuir valor aquele elemento
+
+object x Object ->
+                  Object: permite a criação de objetos que aceitam tipos primitivos como valores, como strings,numbers etc.
+                        Exemplo: {
+                                        let obj: Object = {};
+                                        obj = 1;
+                                        obj = '1';
+                                        obj = true;
+                                        obj = Symbol(1);
+                                }
+                  object: permite a criação de objetos desde que os valores a serem atribuídos não sejam do tipo primitivo.
+                  Exemplo: {
+                                let obj: object = {};
+                                obj = {};
+                                obj = [];
+                                obj = () => {};
+
+                           }
+
+                  { } -> simboliza um objeto sem propriedades, porém com as mesmas funções de Object.
