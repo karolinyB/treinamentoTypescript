@@ -4,7 +4,10 @@
 // as comparações no vetor seguindo o método bubble sort
 
 //let vetor: number[] = [25, 3, 2, 7, 9, 12, 6, 0, 95, 78, 9, 45, 100];
-let vetor: number[] = [0, 2, 3, 6, 7, 9, 9, 12, 25, 45, 78, 95, 100];
+//let vetor: number[] = [0, 2, 3, 6, 7, 9, 9, 12, 25, 45, 78, 95, 100];
+let vetor: number[] = [17, 89, 22, 15, 42, 31, 5, 19, 95, 13, 67, 29, 3];
+
+
 let numTrocas: number, numComparacoes: number, aux: number;
 numTrocas = numComparacoes = aux = 0;
 
